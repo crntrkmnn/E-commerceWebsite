@@ -1,0 +1,73 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Açık gri arka plan rengi */
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* Footer yüksekliği kadar padding */
+}
+
+/* Başlık stil ayarları */
+header {
+    background-color: #8b0000; /* Vişne çürüğü rengi */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Ürünler */
+.product {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: #ffffff; /* Beyaz arka plan */
+    text-align: center; /* Ürünlerin merkezde hizalanması */
+    max-width: 300px; /* Maksimum genişlik */
+    margin: 1rem auto; /* Merkezi hizalama */
+}
+
+.product img {
+    width: 100%; /* Resmi kapsayıcısının genişliğine göre ayarlar */
+    height: auto; /* Orantılı yükseklik */
+    max-height: 200px; /* Maksimum yükseklik */
+    object-fit: cover; /* Resmin kapsayıcısına uygun şekilde kesilmesini sağlar */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+/* Sepet */
+.cart {
+    background-color: #dcdcdc; /* Açık gri renginde arka plan */
+    border: 1px solid #bbb; /* Hafif gri sınır */
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-top: 2rem; /* Üstten boşluk */
+}
+
+/* Modal */
+.modal-content {
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #8b0000; /* Vişne çürüğü rengi */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Footer'ın içeriğe zarar vermemesi için relative */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #3090f7; /* Soft mavi arka plan */
+    border-color: #3090f7; /* Soft mavi sınır */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Daha koyu mavi hover efekti */
+    border-color: #004085; /* Daha koyu mavi sınır hover efekti */
+}

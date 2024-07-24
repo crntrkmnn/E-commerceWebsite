@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CerenTurkmen E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CerenTurkmen E-Commerce</h1>
+    </header>
+
+    <div class="container">
+        <div class="row product-list">
+            <!-- Ürünler JavaScript ile buraya eklenecek -->
+        </div>
+
+        <!-- Sepet butonu -->
+        <button class="btn btn-danger" data-toggle="modal" data-target="#cartModal">
+            View Cart
+        </button>
+
+        <!-- Sepet Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="cart-items">
+                            <!-- Sepet ürünleri buraya eklenecek -->
+                        </ul>
+                        <p id="empty-cart" style="display: none;">Your cart is empty</p>
+                        <p>Total Items: <span id="item-count">0</span></p>
+                        <p>Total Price: $<span id="total-price">0.00</span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2021 CerenTurkmen E-Commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
